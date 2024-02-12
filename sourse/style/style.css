@@ -21,6 +21,13 @@ html {
 .text {
     font-size: 20px;
 }
+.spani {
+    font-size: 17px;
+}
+#header23 {
+    font-size: 15px;
+    font-weight: bold;
+}
 /* корзина */
 .buy {
     margin-left: auto;
