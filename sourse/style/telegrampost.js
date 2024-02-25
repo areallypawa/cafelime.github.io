@@ -5,12 +5,12 @@ const SUCCESS = document.getElementById("success");
 
 // const cartStorage2 = JSON.parse(localStorage.getItem("cart") || "[]")
 
-cartStorage.forEach(el => {
-    let message_zakaz = 'Заказ:\n'
-    const { name, quantity } = el
-    CART = `${ name } - ${ quantity } шт`
-    message_zakaz += `${ CART }`
-})
+// cartStorage.forEach(el => {
+//     let message_zakaz = 'Заказ:\n'
+//     const { name, quantity } = el
+//     CART = `${ name } - ${ quantity } шт`
+//     message_zakaz += `${ CART }`
+// })
 
 
 
@@ -24,7 +24,7 @@ document.getElementById('tg').addEventListener('submit', function(e) {
     message += `<b>Номер телефона: </b> ${ this.number.value }\n`;
     message += `<b>Адрес: </b> ${ this.text.value }\n`;
     message += `<b>Время доставки: </b> ${ this.time.value }\n`;
-    message += `<b>Заказ: </b> ${  a }`;
+    // message += `<b>Заказ: </b> ${  a }`;
 
     axios.post(URL_API, {
         chat_id: CHET_ID,
