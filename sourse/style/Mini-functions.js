@@ -28,7 +28,41 @@ const cards = document.querySelectorAll(".product__info")
 
 
 
+//Функция добавления в корзину
 
+function addItemToCard(productId){
+    let product = products.find(function(product){
+        return product.id == productId;
+    });
+
+    if(cart.lenght == 0){
+        cart.push(product);
+    }else{
+        let res = cart.find(element => element.id == productId);
+        if(res == undefined){
+            cart.push(product);
+        }
+    }   
+    
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+
+function removeItemfromCart(productId){
+    let temp = cart.filter(item => item.id != productId);
+    localStorage.setItem("cart", JSON.stringify(temp));
+
+}
+
+function updateQuantity(productId, quantity){
+    for(let product of cart){
+        if(product.id == productId){
+            product.quantity = quantity;
+        }
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+}
 
 
 
