@@ -1,7 +1,8 @@
 let cart = JSON.parse(localStorage.getItem("cart")); //все товары в корзине
-
 const cartSide = document.querySelector(".cart")
 const cartStorage = JSON.parse(localStorage.getItem("cart") || "[]")
+
+
 
 // Конечная сумма
 function getTotal() {
@@ -18,6 +19,8 @@ function getTotal() {
 }
 
 
+
+
 //добавляем в таблицу
 if (cartStorage.length) {
     cartStorage.forEach(el => {
@@ -25,7 +28,7 @@ if (cartStorage.length) {
         const newCard = document.createElement('tr')
 
         newCard.className = `newCarto${id}`;
-        newCard.innerHTML = `<tr><td><div class="title"><h1>${name}</h1></div></td><td><div class="title"><h1>${price}</h1></div></td><td><div class="title"><h1>${quantity}</h1></div></td><td><div class="doing"><button class="btn btN mbtn${id} btn-danger">Del</button><button class="btn btN pbtn${id} btn-primary">plus</button></div></td></tr>`
+        newCard.innerHTML = `<tr><td><div class="title"><h1>${name}</h1></div></td><td><div class="title"><h1>${price}</h1></div></td><td><div class="title"><h1 id="prices${id}">${quantity}</h1></div></td><td><div class="doing"><button class="btn btN mbtn${id} btn-danger">Del</button><button class="btn btN pbtn${id} btn-primary">plus</button></div></td></tr>`
         cartSide.appendChild(newCard)
 
         getTotal();
@@ -39,21 +42,32 @@ if (cartStorage.length) {
     oblzak.classList.add("hide");
 
 }
-//Функция удаления из корзины
+
+
+
+
+
+
+//Функция удаления из корзины единично
 function removeItemfromCart(productId) {
+    console.log(1)
     let temp = cart.filter(item => item.id != productId);
+    localStorage.setItem("cart", JSON.stringify(temp));
+
+    location.reload();
+}
+
+
+
+
+//Удалить все
+function removeAll() {
+    let temp = []
     localStorage.setItem("cart", JSON.stringify(temp));
     location.reload();
 }
 
-//Удалить по 1 типу
-let allDelete = document.getElementsByClassName("delall")[0];
-allDelete.addEventListener("click", () => {
-    cartStorage.forEach(el => {
-        const { id } = el
-        removeItemfromCart(id)
-    })
-})
+
 
 //Узнаем кол-во 
 function Quantity(productId) {
@@ -63,7 +77,9 @@ function Quantity(productId) {
         }
     }
 }
-//Обнова браво страс
+
+
+//Обновить кол-во товара в LS + Обнова дисплея
 function updateQuantity(productId, quantity) {
     for (let product of cart) {
         if (product.id == productId) {
@@ -71,7 +87,20 @@ function updateQuantity(productId, quantity) {
         }
     }
     localStorage.setItem("cart", JSON.stringify(cart));
-    location.reload();
+
+
+    // updateDisplay(productId);
+    //Обновляю дисплей
+    const display = document.getElementById(`prices${ productId }`)
+    const final_price = document.getElementById('result')
+    if(display) {
+        const Q = Quantity(productId);
+        const P = getTotal();
+        display.textContent = Q
+        final_price.textContent = `${ P } ₽`
+    }else {
+        console.log('Нема')
+    }
 }
 
 let n1 = Quantity(1);
@@ -102,15 +131,23 @@ ptriger6 = document.getElementsByClassName('pbtn6')[0];
 ptriger7 = document.getElementsByClassName('pbtn7')[0];
 ptriger8 = document.getElementsByClassName('pbtn8')[0];
 
+//Кнопка удалить все
+delall = document.getElementsByClassName('delall')[0];
+delall.addEventListener('click', () => {
+    removeAll();
+})
+
 
 
 if (mtriger) {
     mtriger.addEventListener('click', () => {
+        
         if ((n1 - 1) > 0) {
             n1--;
             updateQuantity(1, n1);
-        } else {
+        }else {
             removeItemfromCart(1);
+
         }
     });
     ptriger.addEventListener('click', () => {
@@ -229,26 +266,4 @@ if (mtriger8) {
         updateQuantity(8, n8);
     });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
