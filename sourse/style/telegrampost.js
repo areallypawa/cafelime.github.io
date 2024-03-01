@@ -61,7 +61,7 @@ document.getElementById('tg').addEventListener('submit', function(e) {
         removeAllost();
 
         ZAKAZ.style.display = "block"
-        SUCCESS.style.display = "block"
+        SUCCESS.style.display = "flex"
     })
     .catch((err) => {
         console.warn(err);
