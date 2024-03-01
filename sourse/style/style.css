@@ -1,3 +1,24 @@
+body {
+    display: block;
+    
+}
+
+.alert {
+    flex-shrink: 1!important;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+
+
+.tabl {
+    margin-left: 3em!important;
+    margin-right: 3em!important;
+}
+
+
 .btnzak {
     display: flex;
     justify-content: center;
@@ -29,4 +50,54 @@ th {
 .doing {
     display: flex;
     justify-content: center;
+}
+
+
+@media (max-width: 1024px) {
+    .upperline {
+        justify-content: center;
+    }
+    .upperline > img {
+        height: 5rem;
+        margin: 0;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .spani {
+        font-size: 10px;
+    }
+}
+@media (max-width: 973px) {
+    .newCarto1 {
+        font-size: 12px;
+    }
+    thead {
+        font-size: 14px;
+    }
+    /* #success {
+        margin: 0;
+        max-width: 100%;
+        margin-bottom: 15px;
+    } */
+}
+@media (max-width: 710px) {
+    thead {
+        font-size: 10px;
+    }
+    .upperline > img {
+        height: 4rem;
+        margin: 0;
+    }
+}
+@media (max-width: 426px) {
+    .btN {
+        font-size: 10px!important;
+    }
+    .tabl {
+        margin: 0!important;
+    }
+    .pass {
+        padding: 0!important;
+    }
 }
