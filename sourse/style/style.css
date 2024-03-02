@@ -2,17 +2,7 @@ body {
     display: block;
     
 }
-* {
-  box-sizing: border-box;
-  font-family: "Shantell Sans";
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "BNCE" 0,
-    "INFM" 0,
-    "SPAC" 0;
-}
+
 .alert {
     flex-shrink: 1!important;
     justify-content: center;
