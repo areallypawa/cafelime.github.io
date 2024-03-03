@@ -1,103 +1,108 @@
 body {
-    display: block;
-    
+  display: block;
 }
 
 .alert {
-    flex-shrink: 1!important;
-    justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
-
+  flex-shrink: 1 !important;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-
-
 
 .tabl {
-    margin-left: 3em!important;
-    margin-right: 3em!important;
+  margin-left: 3em !important;
+  margin-right: 3em !important;
 }
-
 
 .btnzak {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 .container {
-    background-color: #F7F7F7;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    border-radius: 20px;
+  background-color: #f7f7f7;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border-radius: 20px;
 }
 .container > h2 {
-    margin-left: 10px;
-    color: rgb(0, 0, 0);
+  margin-left: 10px;
+  color: rgb(0, 0, 0);
 }
 .obl {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 .hide {
-    display: none !important;
+  display: none !important;
 }
 
 th {
-    line-height: 2;
+  line-height: 2;
 }
 .btN {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 .doing {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 
 @media (max-width: 1024px) {
-    .upperline {
-        justify-content: center;
-    }
-    .upperline > img {
-        height: 5rem;
-        margin: 0;
-    }
-    .text {
-        font-size: 15px;
-    }
-    .spani {
-        font-size: 10px;
-    }
+  .upperline {
+    justify-content: center;
+  }
+  .upperline > img {
+    height: 5rem;
+    margin: 0;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .spani {
+    font-size: 10px;
+  }
 }
 @media (max-width: 973px) {
-    .newCarto1 {
-        font-size: 12px;
-    }
-    thead {
-        font-size: 14px;
-    }
-    /* #success {
-        margin: 0;
-        max-width: 100%;
-        margin-bottom: 15px;
-    } */
+  .title {
+    font-size: 12px;
+  }
+  thead {
+    font-size: 14px;
+  }
 }
 @media (max-width: 710px) {
-    thead {
-        font-size: 10px;
-    }
-    .upperline > img {
-        height: 4rem;
-        margin: 0;
-    }
+  thead {
+    font-size: 10px;
+  }
+  .upperline > img {
+    height: 4rem;
+    margin: 0;
+  }
 }
 @media (max-width: 426px) {
-    .btN {
-        font-size: 10px!important;
-    }
-    .tabl {
-        margin: 0!important;
-    }
-    .pass {
-        padding: 0!important;
-    }
+  .btN {
+    font-size: 10px !important;
+  }
+  .tabl {
+    margin: 0 !important;
+  }
+  .pass {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 321px) {
+  thead {
+    font-size: 11px;
+  }
+  .result,
+  .itogi {
+    font-size: 15px !important;
+  }
+  .title {
+    font-size: 8px !important;
+  }
+  .btN {
+    font-size: 9px !important;
+    margin: 0;
+  }
 }
