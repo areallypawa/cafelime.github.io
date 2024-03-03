@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="Author" content="Павленко Павел">
+	<meta name="Adress" content="Нефтеюгаснк, МБОУ СОШ №1, 1 мкр">
     <!-- Типа адаптивность ветка
     <meta name="viewport" content="width=1170, initial-scale=1.0"> -->
     <title>Корзина</title>
@@ -12,6 +15,7 @@
     <link rel="stylesheet" href="../style/styles.css">
     <link rel="stylesheet" href="../style/style.css">
     <!-- Общий стиль страницы -->
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,9 +55,9 @@
             <table id="tablitza" class="table table-bordered">
                 <thead>
                     <tr>
-                        <th width="30%">Нзвание</th>
-                        <th>Цена, ₽</th>
-                        <th>Количество</th>
+                        <th>Нзвание</th>
+                        <th>Цена</th>
+                        <th>Кол-во</th>
                         <th style="text-align: center;">Взаимодействовать
                             <button 
                                 class="btn btn-danger btN delall btn-sm">Удалить все</button>
@@ -63,7 +67,7 @@
                 <tbody class="cart"></tbody>
                 <tbody>
                     <tr>
-                        <td 
+                        <td class="itogi"
                             colspan="3" 
                             style="text-align:right; 
                             font-weight: bold; font-size: 20px;">ИТОГО:
@@ -127,34 +131,14 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer>
+		<div class="information_of_site">
+			О нас 
+			<div>
+				<a href="">Vk</a>
+			</div>
+		</div>
+	</footer>
     <script src="../style/script.js"></script>
     <script src="../style/telegrampost.js"></script>
     <!-- axios -->
@@ -162,5 +146,4 @@
     <!-- axios -->
     
 </body>
-
 </html>
