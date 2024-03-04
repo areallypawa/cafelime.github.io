@@ -48,11 +48,11 @@ function addItemToCard(productId){
 }
 
 
-function removeItemfromCart(productId){
-    let temp = cart.filter(item => item.id != productId);
-    localStorage.setItem("cart", JSON.stringify(temp));
+// function removeItemfromCart(productId){
+//     let temp = cart.filter(item => item.id != productId);
+//     localStorage.setItem("cart", JSON.stringify(temp));
 
-}
+// }
 
 function updateQuantity(productId, quantity){
     for(let product of cart){
