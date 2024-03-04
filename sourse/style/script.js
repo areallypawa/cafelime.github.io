@@ -50,7 +50,7 @@ if (cartStorage.length) {
 
 //Функция удаления из корзины единично
 function removeItemfromCart(productId) {
-    console.log(1)
+    // console.log(1)
     let temp = cart.filter(item => item.id != productId);
     localStorage.setItem("cart", JSON.stringify(temp));
 
