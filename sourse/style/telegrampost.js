@@ -23,8 +23,8 @@ function getTotal() {
 }
 //Удалить все
 function removeAllost() {
-    let temp = []
-    localStorage.setItem("cart", JSON.stringify(temp));
+    let tempas = []
+    localStorage.setItem("cart", JSON.stringify(tempas));
 }
 
 
