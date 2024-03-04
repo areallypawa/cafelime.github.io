@@ -62,8 +62,8 @@ function removeItemfromCart(productId) {
 
 //Удалить все
 function removeAll() {
-    let tempas = []
-    localStorage.setItem("cart", JSON.stringify(tempas));
+    let temp = []
+    localStorage.setItem("cart", JSON.stringify(temp));
     location.reload();
 }
 
