@@ -2,9 +2,7 @@ let cart = JSON.parse(localStorage.getItem("cart")); //все товары в к
 const cartSide = document.querySelector(".cart")
 const cartStorage = JSON.parse(localStorage.getItem("cart") || "[]")
 
-window.addEventListener('beforeunload', function(e) {
-    location.reload();
-});
+
 
 // Конечная сумма
 function getTotal() {
