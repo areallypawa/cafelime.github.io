@@ -2,12 +2,7 @@ const toastTrigger = document.getElementById('liveToastBtn')
 const toastLiveExample = document.getElementById('liveToast')
 var header = document.getElementById("header23")
 
-function updateCart() {
-    if (localStorage.getItem('cart') && localStorage.getItem('cart').length === 0) {
-        location.reload();
-      }
-}
-updateCart();
+
 
 
 fetch("storage.json")
