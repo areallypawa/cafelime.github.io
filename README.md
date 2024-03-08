@@ -1,3 +1,7 @@
+<p align="center">
+      <img src="https://i.ibb.co/RYsXYL6/image.png" alt="image" border="0" width="726">
+</p>
+
 # Cafe "Lime" school-project
 UK: This repository is a draft history of the creation of an online marketplace!
 
