@@ -25,7 +25,7 @@ html {
 }
 
 /* навигация */
-.upperline>img {
+.upperline> a > img {
   height: 7rem;
   margin-left: 100px;
 }
@@ -461,7 +461,7 @@ img {
     height: 100%;
   }
 
-  .upperline>img {
+  .upperline > a > img {
     height: 8rem;
     margin-left: 100px;
   }
