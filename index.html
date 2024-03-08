@@ -394,7 +394,11 @@
 	</footer>
 	<script src="sourse/style/Mini-functions.js"></script>
 	<script>
-		let cart = JSON.parse(localStorage.getItem("cart")); //все товары в корзине
+		window.onload = function() {
+  			if(performance.navigation.type === 2){
+    				location.reload();
+  			}
+		}
 	</script>
 </body>
 
