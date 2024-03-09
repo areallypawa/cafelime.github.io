@@ -11,7 +11,7 @@ Most commits may not be intoxicated, but that's the way of the samurai.
 
 If you want to look at the finished project, then it was created in a separate repository in my profile.
 
-link :
+link : https://github.com/areallypawa/pizzaandkapibara.github.io
 
 In short, what I used to create this site:
 1. The entire site is in pure JS, CSS and HTML
@@ -30,7 +30,7 @@ RU: Данный репозиторий является историей-чер
 
 Если хотите посмотреть на готовый проект, то он создан в отдельном репозитории в моем профиле.
 
-ссылка :
+ссылка : https://github.com/areallypawa/pizzaandkapibara.github.io
 
 Если в кратце что я использовал для создания данного сайта:
   1. Весь сайт на чистом JS, CSS и HTML
