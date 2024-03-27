@@ -3,7 +3,7 @@
 </p>
 
 # Cafe "Lime" school-project
-UK: This repository is a draft history of the creation of an online marketplace!
+UK: This repository is a draft history of the creation of an online marketplace! 
 
 This repository is both a ready-made project and a small draft. I have spent a lot of effort on creating this project and I value every single one of my comments in this repository very much.
 That is why this repository still exists and it is the history of the creation of the project "Creating a website for online orders".
